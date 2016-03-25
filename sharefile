@@ -1,1 +1,18 @@
 
+# http://pubs.vmware.com/orchestrator-plugins/index.jsp?topic=%2Fcom.vmware.using.powershell.plugin.doc_10%2FGUID-D4ACA4EF-D018-448A-866A-DECDDA5CC3C1.html
+
+Run the following command to enable basic authentication.
+
+c:\> winrm set winrm/config/service/auth @{Basic="true"}
+
+Run the following command to allow transfer of unencrypted data on the WinRM service.
+
+c:\> winrm set winrm/config/service @{AllowUnencrypted="true"}
+
+Run the following command to enable basic authentication.
+
+c:\> winrm set winrm/config/client/auth @{Basic="true"}
+
+Run the following command to allow transfer of unencrypted data on the WinRM client.
+
+c:\> winrm set winrm/config/client @{AllowUnencrypted="true"}
